@@ -1,1 +1,2 @@
-# Operating_System
+# 한밭대학교 운영체제 (임경태 교수) Linux 명령어 실습
+

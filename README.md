@@ -192,15 +192,66 @@ Appendix) tree 구조 출력하기
 # └── test_cp
 ~~~
 ### cp 명령어 옵션 (자주 사용하는 것)
--i : 동일한 파일이 존재하면 덮어쓸 지 묻는다.
--r : 하위 디렉토리 및 파일까지 복사한다.
--a : 파일의 속성까지 복사한다(권한 등)
+-i : 동일한 파일이 존재하면 덮어쓸 지 묻는다.  
+-r : 하위 디렉토리 및 파일까지 복사한다.  
+-a : 파일의 속성까지 복사한다(권한 등)  
 - - -
 
 # 2. 파일 관련 명령어 
 
 ~~~bash
 # 파일 관련 명령어 시작하기 전에 파이썬 설치 하겠습니다.
-sudo apt-get install python #sudo(관리자 권한) 사용하여 파이썬 설치, 최초 1회만 하면 됨
+~$ sudo apt-get install python #sudo(관리자 권한) 사용하여 파이썬 설치, 최초 1회만 하면 됨
 ~~~
 
+### 2-1 touch [file name]
+### 빈 파일을 생성한다
+
+~~~bash
+~$ ls
+>> test1 test_cp
+
+~$ touch os_class.py
+>> os_class.py test1 test_cp
+~~~
+#
+### 2-2 vi [file name]
+### 파일열기, 작성 (편집기)
+~~~bash
+~$ vi os_class.py
+>> 편집 모드로 변경
+~~~
+
+#### 2-2-1. 편집 모드
+* 초기 상태 : Normal mode  
+  
+* i 입력 --> insert mode (입력 모드)  
+
+~~~python
+print("Hello world")
+
+name = "mjkim"
+print(name)
+~~~
+
+* esc 입력 --> Normal mode (일반 모드, 초기 상태)  
+* : 입력 --> Command mode (명령 모드)
+###
+* 명령 모드에서 wq 입력 (저장 후 종료)
+
+#### 2-2-2. vi편집기로 작성한 내용 확인
+~~~bash
+~$ python os_class.py #python 파일을 실행시킴
+>> Hello World
+>> mjkim
+~~~
+
+### 2-3. cat [file name]
+### 파일의 내용물 출력
+~~~bash
+~$ cat os_class.py
+>> print("Hello World")
+>>
+>> name = "mjkim"
+>> print(name)
+~~~

@@ -64,6 +64,8 @@ $ ls -l #자세한 내용(권한, 소유자, 그룹 등) 출력
 ### 4. cd [path]
 (**C**hange **D**irectory)
 
+- 실습 진행 하면서 pwd로 현재 위치 확인하는 것을 추천
+
 ```bash
 $ cd test1 #test1 디렉토리로 이동
 ```

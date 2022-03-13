@@ -32,6 +32,7 @@
 #
 ### 1-3. ls [option] &nbsp; &nbsp; *<options : -a(all), -l(long)>*
 (**L**ist **S**egments)
+### 현재 디렉토리 내의 내용물 출력
 ```bash
 ~$ ls #현재 작업 디렉토리 안의 내용물 이름 출력 
 >> test1
@@ -69,19 +70,20 @@
 #
 ### 1-4. cd [path]
 (**C**hange **D**irectory)
-
+### 디렉토리 변경
+###
 - 실습 진행 하면서 pwd로 현재 위치 확인하는 것을 추천
 
 ```bash
-~$ cd test1 #test1 디렉토리로 이동
+~$ cd test1        #test1 디렉토리로 이동
 ```
 
 ```bash
-~/test1$ cd .. #이전 디렉토리로 이동
+~/test1$ cd ..     #이전 디렉토리로 이동
 ```
 
 ```bash
-~$ cd test1/test2 #test1 디렉토리 안에 있는 test2 디렉토리로 이동
+~$ cd test1/test2  #test1 디렉토리 안에 있는 test2 디렉토리로 이동
 ```
 
 ```bash
@@ -90,8 +92,9 @@
 #
 ### 1-5. rmdir [directory name]
 (**R**e**m**ove **dir**ectory)
+### 디렉토리 삭제
 ~~~bash
-~$ cd test1    #test1 디렉토리로 이동
+~$ cd test1          #test1 디렉토리로 이동
 ~/test1$ ls          #하위 폴더, 파일이름 출력
 >> test2
 ~/test1$ rmdir test2 #test2 디렉토리 삭제
@@ -99,4 +102,47 @@
 ~~~
 
 #
-### 1-6. mv
+Appendix) tree 구조 출력하기
+~~~bash
+~$ sudo apt-get install tree #sudo(관리자 권한)으로 tree install
+~$ tree
+>> .         #여기에서 .은 현재 디렉토리를 의미
+   └── test1
+   
+   
+~~~
+
+
+#
+### 1-6. mv [option] [file name] [destination] 
+#### (mv [옵션] [이동 할 파일] [이동 될 위치])
+(**m**o**v**e)
+### 디렉토리 이동
+
+~~~bash
+~$ mkdir test3
+~$ ls
+>> test1 test3
+
+# 현재 디렉토리 구조
+
+# .
+# ├──── test1
+# └──── test3
+
+~$ mv test3 test1 #test3 디렉토리를 test1 안으로 이동
+~$ ls
+>> test1
+
+~$ cd test1
+~$ ls
+>> test3
+
+# 이동 후 디렉토리 구조
+
+# .
+# └──── test1
+#       └──── test3
+~~~
+
+

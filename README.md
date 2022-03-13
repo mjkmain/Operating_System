@@ -1,4 +1,4 @@
-# 한밭대학교 운영체제 (임경태 교수) Linux 명령어 실습 
+## 한밭대학교 운영체제 (임경태 교수) Linux 명령어 실습 
 
 ### 
 ```bash
@@ -7,7 +7,8 @@
 >> [출력 결과]
 ```
 - - -
-### 1. pwd 
+# 1. 디렉토리 명령어 
+### 1-1. pwd 
 (**P**rint **W**orking **D**irectory)
 ### 현재 위치한 디렉토리 확인
 
@@ -17,8 +18,10 @@
 >> /home/username
 ```
 #
-### 2. mkdir [directory name]
+### 1-2. mkdir [directory name]
 (**M**a**k**e **dir**ectory)
+### 디렉토리 생성
+
 ```bash
 ~$ mkdir test1 #test1이라는 디렉토리 생성
 ```
@@ -27,7 +30,7 @@
 ~$ mkdir test1/test2 #test1이라는 디렉토리 안에 test2 디렉토리 생성
 ```
 #
-### 3. ls [option] &nbsp; &nbsp; *<options : -a(all), -l(long)>*
+### 1-3. ls [option] &nbsp; &nbsp; *<options : -a(all), -l(long)>*
 (**L**ist **S**egments)
 ```bash
 ~$ ls #현재 작업 디렉토리 안의 내용물 이름 출력 
@@ -64,7 +67,7 @@
 
 
 #
-### 4. cd [path]
+### 1-4. cd [path]
 (**C**hange **D**irectory)
 
 - 실습 진행 하면서 pwd로 현재 위치 확인하는 것을 추천
@@ -85,7 +88,8 @@
 ~/test1/test2$ cd ~ #root 디렉토리로 이동
 ```
 #
-### 5. rmdir [directory name]
+### 1-5. rmdir [directory name]
+(**R**e**m**ove **dir**ectory)
 ~~~bash
 ~$ cd test1    #test1 디렉토리로 이동
 ~/test1$ ls          #하위 폴더, 파일이름 출력
@@ -93,3 +97,6 @@
 ~/test1$ rmdir test2 #test2 디렉토리 삭제
 ~/test1$ ls          #삭제된 모습 확인
 ~~~
+
+#
+### 1-6. mv

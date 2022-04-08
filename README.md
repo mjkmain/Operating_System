@@ -1,5 +1,7 @@
 # 한밭대학교 운영체제 (임경태 교수) Linux 명령어 실습 
 
+https://docs.google.com/document/d/1YJ-U899DD6D8cv7yEU6B1SEOpeoW1JuDollBdMGpW8s/edit
+
 ### 
 ```bash
 ~$ [입력] #주석(설명)
